@@ -8,6 +8,7 @@ typedef struct student
 void main() {
     STU a;
     STUARRAY ab;
-
+    a.name = 'john';
+    a.age = 13;
 }
 ```
