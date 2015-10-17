@@ -19,3 +19,5 @@ location @goapp {
   proxy_pass http://localhost:8080;
 }
 ```
+
+[about link](http://segmentfault.com/q/1010000000437197)
