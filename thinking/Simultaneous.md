@@ -1,0 +1,3 @@
+erlang和golang都是采用了CSP的模式，Communicating Sequential Processes。
+但是erlang是基于进程的消息通信，go是基于goroutine和channel的通信。
+至于python就是一个多线程而已，没有什么其他的技术，nodejs是一个异步操作库，思路完全是不一样的.
