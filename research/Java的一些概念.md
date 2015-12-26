@@ -259,3 +259,11 @@ Hibernate 【Java开源持久层框架】Hibernate是一个开放源代码的对
 
 JFinal【Java极速WEB+ORM框架】
 
+开发工具
+--------
+
+IntelliJ IDEA【Java开发工具】
+
+Eclipse 【Java开源开发工具】
+
+NetBeans【Java开源开发工具】
