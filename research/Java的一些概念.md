@@ -245,3 +245,17 @@ JMX（Java Management Extensions，即Java管理扩展）是一个为应用程�
 JPA(Java Persistence API),JPA通过JDK 5.0注解或XML（标准通用标记语言的子集）描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。
 
 JSP（Java Server Pages)是由Sun Microsystems公司倡导、许多公司参与一起建立的一种动态网页技术标准。JSP技术有点类似ASP技术，它是在传统的网页HTML文件(*.htm,*.html)中插入Java程序段(Scriptlet)和JSP标记(tag)，从而形成JSP文件(*.jsp)。 用JSP开发的Web应用是跨平台的，既能在Linux下运行，也能在其他操作系统上运行。
+
+框架服务
+--------
+
+Spring Framework【Java开源J2EE框架】 MVC WEB框架
+
+WebWork 【Java开源Web框架】
+
+Struts【Java开源Web框架】MVC框架
+
+Hibernate 【Java开源持久层框架】Hibernate是一个开放源代码的对象关系映射框架
+
+JFinal【Java极速WEB+ORM框架】
+
