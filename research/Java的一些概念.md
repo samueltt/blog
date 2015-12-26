@@ -7,3 +7,7 @@ Java SE（J2SE，Java2 Platform Standard Edition，标准版）
 Java EE（J2EE，Java 2 Platform, Enterprise Edition，企业版）
 
 Java ME（J2ME，Java 2 Platform Micro Edition，微型版）
+
+JDK java develop kit (JAVA API包,编译开发是引用的包)
+
+JRE java runtime environment(java程序运行的环境)
