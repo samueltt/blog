@@ -183,3 +183,65 @@ volatile
 
 while
 while循环
+
+
+主要特性
+--------
+
+Java语言是易学的。Java语言的语法与C语言和C++语言很接近，使得大多数程序员很容易学习和使用Java。另一方面，Java丢弃了C++中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。特别地，Java语言不使用指针，而是引用。并提供了自动的废料收集，使得程序员不必为内存管理而担忧。
+
+Java语言是强制面向对象的。Java语言提供类、接口和继承等原语，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为implements）。Java语言全面支持动态绑定，而C++语言只对虚函数使用动态绑定。总之，Java语言是一个纯的面向对象程序设计语言。
+
+Java语言是分布式的。Java语言支持Internet应用的开发，在基本的Java应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括URL、URLConnection、Socket、ServerSocket等。Java的RMI（远程方法激活）机制也是开发分布式应用的重要手段。
+
+Java语言是健壮的。Java的强类型机制、异常处理、垃圾的自动收集等是Java程序健壮性的重要保证。对指针的丢弃是Java的明智选择。Java的安全检查机制使得Java更具健壮性。
+
+Java语言是安全的。Java通常被用在网络环境中，为此，Java提供了一个安全机制以防恶意代码的攻击。除了Java语言具有的许多安全特性以外，Java对通过网络下载的类具有一个安全防范机制（类ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类SecurityManager）让Java应用设置安全哨兵。
+
+Java语言是体系结构中立的。Java程序（后缀为java的文件）在Java平台上被编译为体系结构中立的字节码格式（后缀为class的文件），然后可以在实现这个Java平台的任何系统中运行。这种途径适合于异构的网络环境和软件的分发。
+
+Java语言是可移植的。这种可移植性来源于体系结构中立性，另外，Java还严格规定了各个基本数据类型的长度。Java系统本身也具有很强的可移植性，Java编译器是用Java实现的，Java的运行环境是用ANSI C实现的。[8] 
+
+Java语言是解释型的。如前所述，Java程序在Java平台上被编译为字节码格式，然后可以在实现这个Java平台的任何系统中运行。在运行时，Java平台中的Java解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。
+
+Java是性能略高的。与那些解释型的高级脚本语言相比，Java的性能还是较优的。
+
+Java语言是原生支持多线程的。在Java语言中，线程是一种特殊的对象，它必须由Thread类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为Thread(Runnable)的构造子将一个实现了Runnable接口的对象包装成一个线程，其二，从Thread类派生出子类并重写run方法，使用该子类创建的对象即为线程。值得注意的是Thread类已经实现了Runnable接口，因此，任何一个线程均有它的run方法，而run方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为synchronized）。
+
+Java语言是动态的。Java语言的设计目标之一是适应于动态变化的环境。Java程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java中的类有一个运行时刻的表示，能进行运行时刻的类型检查。
+
+Java语言的优良特性使得Java应用具有无比的健壮性和可靠性，这也减少了应用系统的维护费用。Java对对象技术的全面支持和Java平台内嵌的API能缩短应用系统的开发时间并降低成本。Java的编译一次，到处可运行的特性使得它能够提供一个随处可用的开放结构和在多平台之间传递信息的低成本方式。特别是Java企业应用编程接口（Java Enterprise APIs）为企业计算及电子商务应用系统提供了有关技术和丰富的类库。
+
+主要服务
+--------
+
+JDBC（Java Database Connectivity）提供连接各种关系数据库的统一接口，作为数据源，可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC为工具/数据库开发人员提供了一个标准的API，据此可以构建更高级的工具和接口，使数据库开发人员能够用纯Java API 编写数据库应用程序，同时，JDBC也是个商标名。
+
+EJB(Enterprise JavaBeans）使得开发者方便地创建、部署和管理跨平台的基于组件的企业应用。
+
+Java RMI(Java Remote Method Invocation）用来开发分布式Java应用程序。一个Java对象的方法能被远程Java虚拟机调用。这样，远程方法激活可以发生在对等的两端，也可以发生在客户端和服务器之间，只要双方的应用程序都是用Java写的。
+
+Java IDL(Java Interface Definition Language) 提供与CORBA(Common Object Request Broker 
+Architecture）的无缝的互操作性。这使得Java能集成异构的商务信息资源。
+
+JNDI(Java Naming and Directory Interface）提供从Java平台到的统一的无缝的连接。这个接口屏蔽了企业网络所使用的各种命名和目录服务。
+
+JMAPI(Java Management API）为异构网络上系统、网络和服务管理的开发提供一整套丰富的对象和方法。
+
+JMS(Java Message Service）提供企业消息服务，如可靠的消息队列、发布和订阅通信、以及有关推拉（Push/Pull）技术的各个方面。
+
+JTS(Java transaction Service）提供存取事务处理资源的开放标准，这些事务处理资源包括事务处理应用程序、事务处理管理及监控。
+
+JMF(Java Media Framework API），她可以帮助开发者把音频、视频和其他一些基于时间的媒体放到Java应用程序或applet小程序中去，为多媒体开发者提供了捕捉、回放、编解码等工具，是一个弹性的、跨平台的多媒体解决方案。
+
+Annotation(Java Annotation），在已经发布的JDK1.5(tiger）中增加新的特色叫Annotation。Annotation提供一种机制，将程序的元素如：类，方法，属性，参数，本地变量，包和元数据联系起来。这样编译器可以将元数据存储在Class文件中。这样虚拟机和其它对象可以根据这些元数据来决定如何使用这些程序元素或改变它们的行为。
+在Java技术中，值得关注的还有JavaBeans，它是一个开放的标准的组件体系结构，它独立于平台，但使用Java语言。一个JavaBean是一个满足JavaBeans规范的Java类，通常定义了一个现实世界的事物或概念。一个JavaBean的主要特征包括属性、方法和事件。通常，在一个支持JavaBeans规范的开发环境（如Sun Java Studio 和IBM VisualAge for Java）中，可以可视地操作JavaBean，也可以使用JavaBean构造出新的JavaBean。JavaBean的优势还在于Java带来的可移植性。EJB (Enterprise JavaBeans) 将JavaBean概念扩展到Java服务端组件体系结构，这个模型支持多层的分布式对象应用。除了JavaBeans，典型的组件体系结构还有DCOM和CORBA，关于这些组件体系结构的深入讨论超出了本书的范围。
+JavaFX　Sun刚刚发布了JavaFX技术的正式版，它使您能利用JavaFX 编程语言开发富互联网应用程序（RIA）。JavaFX Script编程语言（以下称为JavaFX）是Sun微系统公司开发的一种declarative,staticallytyped（声明性的、静态类型）脚本语言。JavaFX技术有着良好的前景，包括可以直接调用Java API的能力。因为JavaFXScript是静态类型，它同样具有结构化代码、重用性和封装性，如包、类、继承和单独编译和发布单元，这些特性使得使用Java技术创建和管理大型程序变为可能。
+JavaFX从它2007年发布以来，表现一直差强人意。Oracle收购了Sun之后，在JavaFX中投入了大量的精力进行推广和更新。JavaFX比较出名的应用应该是在2010年温哥华冬奥会上，调整了JavaFX中的很多概念，以及重新设计和实现了很多重要组件之后，得到的就是现在的JavaFX 2.0。JavaFX 2.0的beta版已经发布，正式版则定于2010年第3季度发布。JavaFX 2.0的新特性使得开发人员应该需要重新审视它在RIA开发领域中的位置。在很多情况下，JavaFX 2.0也会是不错的选择。
+
+JMX（Java Management Extensions，即Java管理扩展）是一个为应用程序、设备、系统等植入
+管理功能的框架。JMX可以跨越一系列异构操作系统平台、系统体系结构和网络传输协议，灵活的开发无缝集成的系统、网络和服务管理应用。
+
+JPA(Java Persistence API),JPA通过JDK 5.0注解或XML（标准通用标记语言的子集）描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。
+
+JSP（Java Server Pages)是由Sun Microsystems公司倡导、许多公司参与一起建立的一种动态网页技术标准。JSP技术有点类似ASP技术，它是在传统的网页HTML文件(*.htm,*.html)中插入Java程序段(Scriptlet)和JSP标记(tag)，从而形成JSP文件(*.jsp)。 用JSP开发的Web应用是跨平台的，既能在Linux下运行，也能在其他操作系统上运行。
